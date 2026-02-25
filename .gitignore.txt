@@ -1,0 +1,11 @@
+# Ignora i dati della NASA
+01_Predictive_Maintenance_RUL/CMAPSSData/
+*.txt
+*.csv
+
+# Ignora file di sistema
+.DS_Store
+__pycache__/
+.ipynb_checkpoints/
+
+
