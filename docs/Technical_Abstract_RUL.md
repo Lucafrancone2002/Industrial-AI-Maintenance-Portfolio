@@ -1,23 +1,20 @@
-# Technical Abstract: Predictive Maintenance and RUL Estimation
+# Technical Abstract: Prognostics and Remaining Useful Life (RUL) Estimation
+**Domain:** Reliability Engineering & Predictive Maintenance  
 **Author:** Luca Francone  
-**Focus:** Reliability Engineering, Signal Processing, and Data-Driven Diagnostics  
 
 ## 1. Executive Summary
-This project implements a data-driven framework for estimating the **Remaining Useful Life (RUL)** of complex industrial equipment. By analyzing high-frequency sensor telemetry from the NASA CMAPSS dataset, the study identifies degradation patterns and identifies critical "Health Indicators" to predict potential hardware failures before they occur.
+This project develops a computational framework to estimate the **Remaining Useful Life (RUL)** of industrial assets, specifically high-bypass turbofan engines. By leveraging high-frequency telemetry data from the NASA CMAPSS dataset, the study successfully maps the transition from a nominal "healthy" state to a critical "failure" state. This allows for proactive maintenance, effectively reducing the risks associated with unscheduled downtime in precision-critical industries.
 
-## 2. Methodology
-The analysis follows a rigorous three-step engineering workflow:
-* **Target Engineering:** Conversion of time-series operational cycles into a continuous RUL target variable, mapping asset life from healthy state to functional failure.
-* **Statistical Feature Selection:** Implementation of a correlation-based analysis to filter 21 sensor streams. This step identifies which physical parameters (e.g., temperature, pressure, rotation speeds) show the strongest statistical drift relative to equipment wear.
-* **Signal Visualization:** Generation of trend-analysis plots and correlation heatmaps to provide actionable insights into the equipment's health state.
+## 2. Methodology and Workflow
+The research follows a structured three-phase engineering approach:
+* **Target Synthesis:** Transforming raw operational cycle counts into a continuous RUL variable. This creates a quantitative timeline that represents the hardware's degradation path over time.
+* **Feature Selection Strategy:** Not all sensor data is informative. Through statistical correlation mapping, the project filters 21 distinct sensor streams to isolate those showing the strongest physical drift. This ensures the model focuses on the most reliable indicators of wear.
+* **Exploratory Signal Analysis:** Utilizing data visualization to observe how physical parameters (e.g., temperatures, pressures) diverge from their baseline as the asset approaches its end-of-life.
 
-## 3. Key Findings (Preliminary)
-* **Identification of High-Impact Sensors:** Sensors such as `s11` and `s12` demonstrate a high negative correlation with RUL, making them primary candidates for early-warning detection systems.
-* **System Degradation Profiles:** The study confirms that equipment health does not always decline linearly; significant signal variance and "noise" increase as the asset approaches its critical failure point.
+## 3. Key Findings and Results
+* **Detection of Critical Health Indicators:** Sensors `s11` and `s12` (related to outlet temperatures) were identified as high-fidelity signals. Their consistent drift patterns provide early warning signatures long before catastrophic failure occurs.
+* **Non-Linear Degradation Patterns:** The analysis reveals that equipment wear is rarely linear. As the asset reaches late-stage degradation, signal variance and "noise" increase significantly, indicating a loss of structural stability within the system.
+* **Correlation Precision:** The study achieved a clear statistical hierarchy of sensors, distinguishing between stable parameters and those susceptible to environmental and operational stress.
 
-## 4. Industrial Application
-This methodology is directly applicable to high-tech manufacturing environments (such as Semiconductor Tooling) where maximizing **MTBF (Mean Time Between Failures)** and reducing unscheduled downtime are critical for operational efficiency and cost reduction.
-
----
-*Note: This abstract represents a technical proof-of-concept using public industrial datasets.* 
-
+## 4. Industrial Implications
+This framework is highly relevant for the **Semiconductor Manufacturing** industry. By predicting failure, companies can shift from reactive repairs to optimized maintenance schedules, maximizing **Mean Time Between Failures (MTBF)** and protecting expensive wafer production cycles.
