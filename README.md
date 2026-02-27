@@ -14,7 +14,7 @@ This project implements a predictive maintenance framework utilizing the NASA CM
 * **Feature Engineering:** Statistical correlation analysis to identify high-fidelity degradation signals in sensor telemetry (e.g., thermal and pressure drift).
 * **Analysis:** Evaluation of sensor signal divergence as a proxy for hardware fatigue and structural wear.
 
-**Technical Documentation:** [NASA_RUL_Analysis.ipynb](./01_Predictive_Maintenance_RUL/NASA_RUL_Analysis.ipynb)
+**Technical Documentation:** [Predictive_Maintenance_Analysis.ipynb](./01_Predictive_Maintenance_RUL/Predictive_Maintenance_Analysis.ipynb.ipynb)
 
 ---
 
