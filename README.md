@@ -5,7 +5,7 @@ This repository showcases technical implementations of AI, Signal Processing, an
 
 ---
 
-## 🚀 Key Projects
+## Key Projects
 
 ### 1. Fleet-Scale Remaining Useful Life (RUL) Prediction
 * **Objective:** Developing predictive models to estimate the time-to-failure for turbofan engines, enabling proactive maintenance scheduling.
@@ -15,7 +15,7 @@ This repository showcases technical implementations of AI, Signal Processing, an
     * Statistical correlation mapping for feature selection.
 * **Key Results:** Successfully isolated "health indicators" (e.g., Sensor 11/12) showing clear hardware fatigue signals.
 
-#### 📊 Signal Degradation Insight
+#### Signal Degradation Insight
 ![Sensor Drift Analysis](01_Predictive_Maintenance_RUL/docs/sensor_drift_plot.png)
 *Figure 1: Observed signal drift in engine sensors, marking the transition from stable operation to accelerated hardware degradation.*
 
@@ -35,7 +35,7 @@ This repository showcases technical implementations of AI, Signal Processing, an
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 * `01_Predictive_Maintenance_RUL/`: End-to-end RUL analysis using NASA datasets.
 * `docs/`: General documentation and technical abstracts. 
 
