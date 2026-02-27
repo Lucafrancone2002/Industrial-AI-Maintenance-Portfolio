@@ -1,41 +1,44 @@
 # Industrial AI & Automation Portfolio
 ### Luca Francone — Automation & Control Engineering
 
-This repository showcases technical implementations of AI, Signal Processing, and Data Science applied to **Industrial Reliability**. My work focuses on bridging the gap between **Field Service Operations** and **Advanced Control Theory** to maximize asset uptime.
+This repository presents a collection of technical projects focused on the application of Machine Learning and Digital Signal Processing within the domain of Industrial Reliability and Automation. The primary objective is to demonstrate the integration of Control Theory with data-driven prognostic and diagnostic frameworks.
 
 ---
 
-## Key Projects
+## 1. Remaining Useful Life (RUL) Estimation for Turbofan Engines
+**Focus:** Prognostics and Health Management (PHM)
 
-### 1. Fleet-Scale Remaining Useful Life (RUL) Prediction
-* **Objective:** Developing predictive models to estimate the time-to-failure for turbofan engines, enabling proactive maintenance scheduling.
-* **Dataset:** NASA CMAPSS (Turbofan Engine Degradation).
-* **Technical Implementation:** * Time-series feature engineering and target RUL generation.
-    * **Signal Drift Analysis:** Identification of physical degradation patterns in sensor telemetry.
-    * Statistical correlation mapping for feature selection.
-* **Key Results:** Successfully isolated "health indicators" (e.g., Sensor 11/12) showing clear hardware fatigue signals.
+This project implements a predictive maintenance framework utilizing the NASA CMAPSS dataset. The analysis focuses on the transition from nominal operational states to functional failure in high-bypass turbofan engines.
 
-#### Signal Degradation Insight
-![Sensor Drift Analysis](01_Predictive_Maintenance_RUL/docs/sensor_drift_plot.png)
-*Figure 1: Observed signal drift in engine sensors, marking the transition from stable operation to accelerated hardware degradation.*
+* **Methodology:** Development of a continuous RUL target through cycle-based degradation mapping.
+* **Feature Engineering:** Statistical correlation analysis to identify high-fidelity degradation signals in sensor telemetry (e.g., thermal and pressure drift).
+* **Analysis:** Evaluation of sensor signal divergence as a proxy for hardware fatigue and structural wear.
+
+**Technical Documentation:** [NASA_RUL_Analysis.ipynb](./01_Predictive_Maintenance_RUL/NASA_RUL_Analysis.ipynb)
 
 ---
 
-### 2. Anomaly Detection in Control Signals (Coming Soon)
-* **Target:** Identifying sensor drift and hardware degradation in automated loops.
-* **Methodology:** Utilizing Autoencoders and Residual Analysis to isolate faults before system-critical failure.
-* **Key Skills:** Digital Signal Processing (DSP), Deep Learning (PyTorch), Control Theory.
+## 2. Real-Time Anomaly Detection in Industrial Control Loops
+**Focus:** Fault Detection and Isolation (FDI)
+
+An investigation into identifying operational deviations and sensor faults using both classical statistical methods and Deep Learning architectures.
+
+* **Baseline:** Implementation of a 3-Sigma statistical control framework to establish a nominal operating envelope.
+* **Neural Architecture:** Development of a Deep Autoencoder using the PyTorch framework to identify non-linear anomalies through reconstruction error analysis.
+* **Comparative Study:** Evaluation of the trade-off between statistical sensitivity and the robustness of unsupervised learning models in detecting sensor drift.
+
+**Technical Documentation:** [Anomaly_Detection_Core.ipynb](./02_Anomaly_Detection_Control_Signals/Anomaly_Detection_Core.ipynb)
 
 ---
 
-## 🛠 Technical Stack & Engineering Expertise
-* **Programming:** Python (Pandas, NumPy, Scikit-Learn, Seaborn)
-* **Domain Expertise:** System Identification, Fault Detection & Isolation (FDI), Reliability Engineering.
-* **Tools:** Jupyter Notebooks, Git/GitHub, MATLAB/Simulink.
+## Technical Stack and Competencies
+* **Computational Frameworks:** Python (NumPy, Pandas, Scikit-Learn, PyTorch).
+* **Engineering Domains:** Reliability Engineering, Digital Signal Processing, System Identification, Control Systems.
+* **Modeling Tools:** Jupyter Notebooks, Git Version Control, MATLAB/Simulink.
 
 ---
 
 ## Repository Structure
-* `01_Predictive_Maintenance_RUL/`: End-to-end RUL analysis using NASA datasets.
-* `docs/`: General documentation and technical abstracts. 
-
+* `01_Predictive_Maintenance_RUL/`: Prognostic analysis and RUL estimation.
+* `02_Anomaly_Detection_Control_Signals/`: Diagnostic frameworks and anomaly detection.
+* `docs/`: Technical abstracts and supporting documentation.
