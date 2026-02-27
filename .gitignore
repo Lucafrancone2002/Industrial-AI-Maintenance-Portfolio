@@ -12,33 +12,7 @@
 Thumbs.db
 desktop.ini
 
-# --- Data & Large Files ---
-# Ignore NASA CMAPSS raw datasets and any CSV/TXT files to protect IP and keep repo light
-01_Predictive_Maintenance_RUL/CMAPSSData/
-*.txt
-*.csv
-*.data
-*.out
 
-# --- Python & Jupyter Notebooks ---
-# Ignore Python bytecode and cache
-__pycache__/
-*.py[cod]
-*$py.class
-
-# Ignore Jupyter Notebook checkpoints and temporary files
-.ipynb_checkpoints
-*/.ipynb_checkpoints/*
-.virtualenv
-.env
-venv/
-
-# --- Documentation & IDEs ---
-# Ignore local IDE settings (VS Code, PyCharm, etc.)
-.vscode/
-.idea/
-*.swp
-*.swo
 
 # =============================================================================
 # End of Configuration
